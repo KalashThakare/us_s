@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Manrope } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
+import { Footer } from "@/components/footer";
 
 
 const inter = Inter({
@@ -26,10 +27,8 @@ const fontBody = Manrope({
 
 export const metadata = {
   title: {
-    default: "Swasthya Pratham | Onestop health solution",
-    template: "",
+    default: "Uss | Local Community Engagement Platform",
   },
-  description: "A online art evaluator and marketplace for all art fanatics",
   icons: [{ rel: "icon", url: "./logo.png" }],
 };
 
@@ -51,6 +50,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
